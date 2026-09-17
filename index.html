@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="km, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مិត្តប្រុសចេះ Marketing - Music Video Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-compact-disc spin-icon"></i>
+            <h1>Music Empire <span class="sub-title">មណ្ឌលតន្ត្រីនិងវីដេអូ</span></h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home / ទំព័រដើម</a>
+            <a href="#featured-video">Music Video / វីដេអូចម្រៀង</a>
+            <a href="#about">About / អំពីពួកយើង</a>
+            <a href="#contact">Contact / ទំនាក់ទំនង</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Welcome to Ultimate Music Hub</h2>
+                <p>បទចម្រៀងល្បីៗ និងវីដេអូកម្សាន្តលំដាប់ខ្ពស់ប្រចាំថ្ងៃជាមួយបទពិសោធន៍ទស្សនាយ៉ាងរលូន។</p>
+                <button id="explore-btn" class="cta-button">Watch Featured Video / មើលវីដេអូពិសេស</button>
+            </div>
+        </section>
+
+        <!-- Extended Featured Video Section (Facebook Style Auto-Play Interaction) -->
+        <section id="featured-video" class="video-showcase-section">
+            <div class="section-title">
+                <h3>Featured Music Video / វីដេអូឃ្លីបចម្រៀងពិសេស</h3>
+                <p>មិត្តប្រុសចេះ Marketing - តន់ ចន្ទសីម៉ា [ OFFICIAL VIDEO ]</p>
+            </div>
+
+            <div class="facebook-feed-card">
+                <div class="card-header">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=100" alt="Channel Avatar" class="avatar">
+                    <div class="poster-info">
+                        <h4>Galaxy Navatra <span class="verified-badge"><i class="fa-solid fa-circle-check"></i></span></h4>
+                        <span class="post-time">Published: 2020-04-04 • 🕒 3M 44S</span>
+                    </div>
+                </div>
+
+                <div class="post-description">
+                    <p>🇰🇭 ស្វែងយល់ពីបទចម្រៀងដ៏ពេញនិយម "មិត្តប្រុសចេះ Marketing" ច្រៀងដោយកញ្ញា តន់ ចន្ទសីម៉ា។ ចុចលើប៊ូតុងខាងក្រោមដើម្បីចាប់ផ្តើមលេងវីដេអូដោយស្វ័យប្រវត្តិ!</p>
+                    <p>🇬🇧 Discover the popular hit song "Mit Proh Ches Marketing" by Ton Chan Seyma. Click below to start running autoplay instantly like social media feeds!</p>
+                </div>
+
+                <!-- Video Player Container with Custom Overlay for Facebook-like Autoplay Click-to-Run -->
+                <div class="video-wrapper" id="videoWrapper">
+                    <div class="video-overlay" id="videoOverlay">
+                        <div class="play-trigger-box">
+                            <div class="play-icon-pulse">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span>Click to Run Auto-Play / ចុចទីនេះដើម្បីលេងវីដេអូ</span>
+                        </div>
+                    </div>
+                    <!-- Embedded YouTube iframe (URL generated from BvWI3hiueUo) -->
+                    <iframe id="youtubePlayer" 
+                        src="https://www.youtube.com/embed/BvWI3hiueUo?enablejsapi=1&autoplay=0&mute=0" 
+                        title="មិត្តប្រុសចេះ Marketing - តន់ ចន្ទសីម៉ា" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="video-stats-bar">
+                    <span><i class="fa-solid fa-thumbs-up"></i> 91K+ Likes</span>
+                    <span><i class="fa-solid fa-eye"></i> 15M+ Views</span>
+                    <span><i class="fa-solid fa-share"></i> Share / ចែករំលែក</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extended Content Section for Longer Layout -->
+        <section id="about" class="info-section">
+            <div class="info-card">
+                <h3><i class="fa-solid fa-music"></i> About the Track / អំពីបទចម្រៀង</h3>
+                <p><strong>Khmer:</strong> បទចម្រៀងនេះបង្កប់នូវអត្ថន័យសប្បាយរីករាយ និងសសើរពីភាពវៃឆ្លាតរបស់អ្នកជំនួញសម័យទំនើប។ វាជាស្នាដៃដ៏លេចធ្លោមួយក្រោមការផលិតរបស់ផលិតកម្ម ថោន ឬ ហ្គាឡាក់ស៊ីណាវ៉ាត្រា។</p>
+                <p><strong>English:</strong> This energetic track highlights modern marketing intelligence and vibrant pop arrangements, delivering top-tier entertainment value.</p>
+            </div>
+            <div class="info-card">
+                <h3><i class="fa-solid fa-headphones"></i> Platform Experience / បទពិសោធន៍នៅលើវេទិកា</h3>
+                <p><strong>Khmer:</strong> វេទិកានេះត្រូវបានរចនាឡើងយ៉ាងពិសេសផ្អែកលើស្ដង់ដារបច្ចេកវិទ្យាទំនើប ដើម្បីធានាបាននូវល្បឿនលឿន ការបង្ហាញច្បាស់ និងងាយស្រួលប្រើប្រាស់។</p>
+                <p><strong>English:</strong> Engineered with responsive styles and isolated modular code structures to offer lightning-fast browsing performance across devices.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="site-footer">
+        <p>&copy; 2026 Music Video Web Application. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+        <p class="footer-sub">Designed with HTML5, CSS3, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
