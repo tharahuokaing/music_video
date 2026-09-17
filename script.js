@@ -4,30 +4,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const exploreBtn = document.getElementById("explore-btn");
     const featuredSection = document.getElementById("featured-video");
 
-    // Facebook-style Auto-play activation on overlay click
+    // Facebook-style Click-to-Run Autoplay activation
     if (videoOverlay && youtubePlayer) {
         videoOverlay.addEventListener("click", () => {
-            // Hide overlay smoothly
+            // Fade out overlay
             videoOverlay.classList.add("hidden");
 
-            // Trigger autoplay via iframe source update
+            // Inject autoplay into the existing iframe source URL
             let currentSrc = youtubePlayer.src;
             if (!currentSrc.includes("autoplay=1")) {
-                if (currentSrc.includes("?")) {
-                    youtubePlayer.src = currentSrc + "&autoplay=1";
-                } else {
-                    youtubePlayer.src = currentSrc + "?autoplay=1";
-                }
+                youtubePlayer.src = currentSrc + "&autoplay=1";
             }
         });
     }
 
-    // Scroll handler for the Hero CTA Button
+    // Scroll handler for Hero CTA Button
     if (exploreBtn && featuredSection) {
         exploreBtn.addEventListener("click", () => {
             featuredSection.scrollIntoView({ behavior: "smooth" });
         });
     }
 
-    console.log("Music Video Platform initialized successfully with Khmer & English layouts.");
+    console.log("UNIVERSE HUOKAING THARA Music Video Platform initialized successfully.");
 });
